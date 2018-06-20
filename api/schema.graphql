@@ -1,0 +1,15 @@
+# import Goal from "./generated/prisma.graphql"
+
+type Mutation {
+  createGoal(input: CreateGoalInput): Goal
+}
+
+type Query {
+  goals: [Goal!]!
+}
+
+input CreateGoalInput {
+  name: String
+  description: String
+  userId: ID!
+}

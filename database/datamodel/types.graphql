@@ -1,0 +1,6 @@
+type Goal {
+  id: ID! @unique
+  name: String
+  description: String
+  userId: ID!
+}

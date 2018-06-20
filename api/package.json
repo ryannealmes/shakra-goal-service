@@ -1,0 +1,22 @@
+{
+  "name": "goal.api",
+  "version": "1.0.0",
+  "description": "API exposing goal functionality",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all server:run server:logs",
+    "server:run": "pm2 start processes.json -i max --watch",
+    "server:logs": "pm2 logs all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "dotenv": "^6.0.0",
+    "graphql-yoga": "^1.14.6",
+    "jsonwebtoken": "^8.3.0",
+    "prisma-binding": "^2.0.2",
+    "winston": "^3.0.0"
+  }
+}

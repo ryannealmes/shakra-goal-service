@@ -1,6 +1,6 @@
 # Goal service
 
-Goal service handles goal management and authentication.
+Goal service handles goal management.
 
 ## Installation
 
